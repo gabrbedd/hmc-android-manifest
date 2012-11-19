@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android-review.googlesource.com/"/>
+  <remote fetch="git://github.com/" name="github-ro" />
   
   <default remote="aosp" revision="master" sync-j="4"/>
   
@@ -23,7 +24,9 @@
   <project groups="device" name="device/samsung/toroplus" revision="4e8ba13e1ba1a8876b254def2c889b507332b608" upstream="master"/>
   <project groups="device" name="device/samsung/tuna" revision="5897310688b2d325dc2e437f6f3811e298b21810" upstream="master"/>
   <project groups="device" name="device/sony/lt26" revision="ef1348f838a0e09c36a1f378a7f80e006dd62cbb" upstream="master"/>
+  <!--
   <project groups="device" name="device/ti/panda" revision="5f567f13b76dc6b2e1bfe3d279fbac0427704a09" upstream="master"/>
+  -->
   <project name="platform/abi/cpp" path="abi/cpp" revision="eb789ea833d8d800662b67914d9c1785a58c2caa" upstream="master"/>
   <project name="platform/bionic" path="bionic" revision="dc77a22850e31eb369ec9776c13c967566bf61d0" upstream="master"/>
   <project name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy" revision="b1fde5cd7d5158b8e6876139ca76a341d0e49708" upstream="master"/>
@@ -312,4 +315,12 @@
   <project name="platform/system/vold" path="system/vold" revision="edf4e17940c6d3887e9009b23ffca5be8116fbe9" upstream="master"/>
   <project groups="toolsbuild" name="platform/tools/build" path="tools/build" revision="f6d881b932302bbdd4347a71bf58deda816c99b9" upstream="master"/>
   <project name="platform/tools/motodev" path="tools/motodev" revision="69989786cefbde82527960a1e100ec9afba46a98" upstream="master"/>
+
+  <project groups="device"
+	   remote="github-ro"
+	   name="gabrbedd/device-ti-panda"
+           path="device/ti/panda"
+	   revision="master"
+	   />
+
 </manifest>
